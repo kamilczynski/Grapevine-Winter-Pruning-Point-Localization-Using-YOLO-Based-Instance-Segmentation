@@ -11,6 +11,8 @@ annotations.
 Given:
 
 - an RGB image  
+
+The image is defined as:
 $$
 I \in \mathbb{R}^{H \times W \times 3}
 $$
