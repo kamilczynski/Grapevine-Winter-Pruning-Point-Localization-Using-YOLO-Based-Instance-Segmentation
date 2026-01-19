@@ -112,8 +112,8 @@ $$
 s_j = \tilde{\mathbf{c}}_j^\top \mathbf{v}_1
 $$
 
-Semantic edge regions are selected using percentile-based thresholds, depending
-on the object class:
+Semantic edge regions are selected using fixed percentile-based thresholds,
+depending on the object class.
 
 ### Top edge (class 0)
 
@@ -124,11 +124,12 @@ $$
 ### Bottom edge (class 1)
 
 $$
-Q_{5}(s) \le s_j \le Q_{30}(s)
+s_j \le Q_{10}(s)
 $$
 
-Adaptive fallback thresholds are applied when too few points are detected,
-ensuring numerical stability and robustness.
+If an insufficient number of contour points satisfies the selection criterion,
+the object is discarded to avoid unstable geometric estimation.
+
 
 ---
 
