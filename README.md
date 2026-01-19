@@ -13,7 +13,8 @@ Given:
 - an RGB image  
 
 The image is defined as an RGB image 
-$ I \in \mathbb{R}^{H \times W \times 3} $.
+$I \in R^{H \times W \times 3}$.
+
 
 
 - a set of segmented objects represented as YOLO polygon annotations,
