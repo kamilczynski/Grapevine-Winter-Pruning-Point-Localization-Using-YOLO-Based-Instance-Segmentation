@@ -12,10 +12,9 @@ Given:
 
 - an RGB image  
 
-The image is defined as:
-$$
-I \in \mathbb{R}^{H \times W \times 3}
-$$
+The image is defined as an RGB image 
+$ I \in \mathbb{R}^{H \times W \times 3} $.
+
 
 - a set of segmented objects represented as YOLO polygon annotations,
 
@@ -33,15 +32,10 @@ line and its representative midpoint, suitable for downstream tasks such as:
 
 Each segmented object is represented by:
 
-- a class label  
-$$
-c
-$$
+- a class label $c$
 
 - a polygon defined by normalized coordinates  
-$$
-(\hat{x}_i, \hat{y}_i), \quad \hat{x}_i, \hat{y}_i \in [0,1]
-$$
+  $(\hat{x}_i, \hat{y}_i)$, where $\hat{x}_i, \hat{y}_i \in [0,1]$
 
 The normalized coordinates are mapped to image space as:
 
