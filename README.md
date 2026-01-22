@@ -17,7 +17,7 @@ Will be added after publication
 ### `02 jsonTOtxt.py`
 <p align="justify">An annotation conversion tool for converting JSON files into YOLO-compatible .txt label format.</p>
 <p align="center">
-  <img src="jsonTOtxt.png.png" alt="jsonTOtxt.png.png" width="800"/>
+  <img src="jsonTOtxt.png" alt="jsonTOtxt.png" width="800"/>
 </p>
 
 # PCA-Based Semantic Cut Line Extraction from YOLO Segmentation
