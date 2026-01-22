@@ -1,3 +1,25 @@
+This repository contains all preprocessing, training, and evaluation scripts used in the study “”.
+
+
+Batch image resizer with a graphical interface based on OpenCV and CustomTkinter.
+## Citation
+If you use this repository, please cite:
+Will be added after publication
+
+
+
+### `01 ImageScaling.py`
+<p align="justify">Batch image resizer with a graphical interface based on OpenCV and CustomTkinter.</p>
+<p align="center">
+  <img src="ScalingV.png" alt="ScalingV.png" width="800"/>
+</p>
+
+### `02 jsonTOtxt.py`
+<p align="justify">An annotation conversion tool for converting JSON files into YOLO-compatible .txt label format.</p>
+<p align="center">
+  <img src="jsonTOtxt.png.png" alt="jsonTOtxt.png.png" width="800"/>
+</p>
+
 # PCA-Based Semantic Cut Line Extraction from YOLO Segmentation
 
 This document provides the full mathematical formulation of the method used to
