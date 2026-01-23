@@ -75,16 +75,22 @@ line and its representative midpoint.
 
 Each segmented object is represented by:
 - a class label $c$
-- a polygon defined by normalized coordinates  
+- a polygon defined by normalized coordinates
+  
   $(\hat{x}_i, \hat{y}_i)$, where $\hat{x}_i, \hat{y}_i \in [0,1]$
+  
 The normalized coordinates are mapped to image space as:
+
 $$
 x_i = \hat{x}_i W, \quad y_i = \hat{y}_i H
 $$
+
 forming a discrete polygon:
+
 $$
 \mathcal{P} = \{(x_i, y_i)\}_{i=1}^{N}
 $$
+
 ---
 
 ## 3. Mask Generation and Contour Extraction
@@ -97,21 +103,29 @@ tracing.
 To estimate the dominant geometric orientation of the object, Principal Component
 Analysis (PCA) is applied to the contour points.
 Let the contour centroid be defined as:
+
 $$
 \boldsymbol{\mu} = \frac{1}{K} \sum_{j=1}^{K} \mathbf{c}_j
 $$
+
 and the centered contour points as:
+
 $$
 \tilde{\mathbf{c}}_j = \mathbf{c}_j - \boldsymbol{\mu}
 $$
+
 Singular Value Decomposition is applied:
+
 $$
 \tilde{\mathbf{C}} = \mathbf{U} \boldsymbol{\Sigma} \mathbf{V}^\top
 $$
+
 where the first right-singular vector
+
 $$
 \mathbf{v}_1
 $$
+
 defines the principal axis of the object.
 To guarantee consistent orientation across images, the axis direction is
 stabilized relative to the image vertical coordinate.
@@ -121,9 +135,11 @@ stabilized relative to the image vertical coordinate.
 ## 5. Edge Selection
 
 Contour points are projected onto the principal axis:
+
 $$
 s_j = \tilde{\mathbf{c}}_j^\top \mathbf{v}_1
 $$
+
 Semantic edge regions are selected using fixed percentile-based thresholds,
 depending on the object class.
 
