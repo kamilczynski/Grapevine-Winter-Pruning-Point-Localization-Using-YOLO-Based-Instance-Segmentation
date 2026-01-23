@@ -207,4 +207,4 @@ $$
 
 are rendered directly on the input image using class-specific color coding.
 
-Annotated images can be exported without altering the original image resolution.
+
