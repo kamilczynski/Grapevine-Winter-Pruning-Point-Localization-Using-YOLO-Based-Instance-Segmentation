@@ -1,7 +1,6 @@
-This repository contains all preprocessing, training, and evaluation scripts used in the study “”.
+This repository contains all preprocessing, training, and evaluation code used in the study “Grapevine Winter Pruning Point Localization Using YOLO-Based Instance Segmentation”.
 
 
-Batch image resizer with a graphical interface based on OpenCV and CustomTkinter.
 ## Citation
 If you use this repository, please cite:
 Will be added after publication
