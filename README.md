@@ -35,7 +35,7 @@ Will be added after publication
 ### `05_Training.py`
 <p align="justify">A training script for YOLO-based object detection built with the Ultralytics framework. The script verifies the runtime environment, including Python, PyTorch, CUDA, cuDNN, and JupyterLab versions, to ensure reproducible training. It generates a structured YOLO-compatible data.yaml configuration, validates dataset directories, and performs model initialization and GPU-accelerated training with configurable hyperparameters such as optimizer, learning rate, batch size, and momentum. The script is intended for automated, reproducible experimentation and benchmarking of YOLO models.</p>
 
-### `06 Models Evaluation - Metric.py.py`
+### `06 Models Evaluation - Metric.py`
 <p align="justify">Script for evaluating a YOLO segmentation model on a test dataset using the Ultralytics framework.
 Runs GPU-based validation, computes global and per-class segmentation metrics (Precision, Recall, F1, mAP), generates standard Ultralytics plots, and exports results to a CSV file for benchmarking and analysis.</p>
 
@@ -198,13 +198,12 @@ $$
 \right)
 $$
 
-
-
-
 - segmentation contours,
 - fitted cut lines,
 - and midpoints
 
-are rendered directly on the input image using class-specific color coding.
+are rendered directly on the input data using class-specific color coding.
 
-
+The PCAcutSeg-V method can be tested both offline on images and in real time.
+### `08 PCAcutSeg-V(OFFLINE).py`
+### `09 PCAcutSeg-V(LIVE).py`
